@@ -1,0 +1,28 @@
+Flask Code
+Create EC2 instance 
+DOwnload Private key ending with .pem
+Create new security group with anyname
+	create inbound rules
+	Type= All trafic
+	Source=	Any Where
+Go to Network Interfaces
+	Allocate the new security group to ec2 instance
+
+
+Download WinSCP
+Download Putty
+Download PuttyGen
+
+Open PuttyGen load .pem file and convert it to .ppk file
+Open WinSCP and share all thee files from local machine into EC2 instance.
+
+Open EC2 using Putty and type following commands
+	sudo apt-get update
+	sudo apt-get upgrade
+	sudo aptget install python3 
+	sudo apt install python3-pip
+	pip3 install -r requirements.txt
+	python3 app.py
+
+Now copy Public DNS of ec2 and  add the port no
+ Ex)ec2-52-66-212-215.ap-south-1.compute.amazonaws.com:8080
